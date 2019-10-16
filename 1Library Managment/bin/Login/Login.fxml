@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.ArcTo?>
+<?import javafx.scene.shape.ClosePath?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.QuadCurveTo?>
+<?import javafx.scene.shape.VLineTo?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #000d33;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <ImageView fitHeight="81.0" fitWidth="79.0" layoutX="255.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-library-64.png" />
+         </image>
+      </ImageView>
+      <Text fill="#f8f5f5" layoutX="160.0" layoutY="99.423828125" strokeType="OUTSIDE" strokeWidth="0.0" text="𝕃𝕚𝕓𝕣𝕒𝕣𝕪" wrappingWidth="79.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btn" layoutX="224.0" layoutY="304.0" onAction="#Cancelb" style="-fx-background-color: #0080ff;" text="Cancel" textFill="#eee7e7">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnLogin" layoutX="334.0" layoutY="304.0" onAction="#login" style="-fx-background-color: #0080ff;" text="Log in" textFill="#fffdfd">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <Path fill="#1f93ff" layoutX="8.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="100.0" />
+              <LineTo x="150.0" y="50.0" />
+              <ArcTo radiusX="30.0" radiusY="25" x="200.0" y="100.0" />
+              <QuadCurveTo controlX="300.0" controlY="300.0" y="150.0" />
+              <ClosePath />
+            <VLineTo />
+          </elements>
+      </Path>
+      <TextField fx:id="username" layoutX="224.0" layoutY="159.0" promptText="Username">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField fx:id="password" layoutX="224.0" layoutY="226.0" prefHeight="30.0" prefWidth="187.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>
